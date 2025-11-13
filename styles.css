@@ -498,4 +498,65 @@ footer {
   background-color: #498a86; /* Darker purple on hover */
   color: white;
 }
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+}
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+}
+.service-card, .give-card {
+  flex: 1 1 100%; /* full width on small screens */
+  max-width: 100%;
+}
+
+@media (min-width: 480px) {
+  .service-card, .give-card {
+    flex: 1 1 45%; /* 2 per row on small tablets */
+  }
+}
+
+@media (min-width: 768px) {
+  .service-card, .give-card {
+    flex: 1 1 280px; /* original layout for desktop */
+  }
+}
+@media (max-width: 480px) {
+  .map-card iframe, .map-container iframe {
+    height: 200px;
+  }
+}
+@media (max-width: 480px) {
+  .btn, #showMapBtn, #give a.btn {
+    width: 100%;
+    text-align: center;
+  }
+}
 
